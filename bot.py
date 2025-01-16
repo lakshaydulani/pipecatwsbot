@@ -158,6 +158,12 @@ async def main(port):
     runner = PipelineRunner()
 
     await runner.run(task)
+    
+    
+if __name__ == "__main__":
+    port = 8765
+    asyncio.run(main(port))
+    # asyncio.run(killServer(port))
 
 
 # async def killServer(port):
