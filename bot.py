@@ -79,7 +79,8 @@ class SessionTimeoutHandler:
 
 async def main(port):
     transport = WebsocketServerTransport(
-        port=port,
+        host="0.0.0.0",
+        port=port,        
         params=WebsocketServerParams(
             audio_out_sample_rate=24000,
             audio_out_enabled=True,
